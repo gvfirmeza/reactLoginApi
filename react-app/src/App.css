@@ -1,0 +1,12 @@
+.Container {
+  width: fit-content;
+  margin: 4em auto;
+}
+
+.Buttons {
+  width: fit-content;
+  margin: auto;
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
