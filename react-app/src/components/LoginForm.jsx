@@ -37,7 +37,7 @@ export default function LoginForm() {
 
   const handleLogin = async () => {
     try {
-      await axios.post('https://vgt.pythonanywhere.com/login', {
+      await axios.post('https://loginapi-kappa.vercel.app/login', {
         username,
         password
       });

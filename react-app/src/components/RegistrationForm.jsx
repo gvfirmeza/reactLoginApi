@@ -1,33 +1,3 @@
-// const RegistrationForm = () => {
-//   const [username, setUsername] = useState('');
-//   const [password, setPassword] = useState('');
-//   const navigate = useNavigate();
-
-//   const handleRegister = async () => {
-//     try {
-//       await axios.post('http://localhost:5000/register', {
-//         username,
-//         password
-//       });
-//       alert('Usuário registrado com sucesso!');
-//       navigate('/login');
-//     } catch (error) {
-//         alert('Erro ao registrar usuário.');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Sign-Up</h2>
-//       <input type="text" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
-//       <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-//       <button onClick={handleRegister}>Sign-Up</button>
-//     </div>
-//   );
-// };
-
-// export default RegistrationForm;
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -68,7 +38,7 @@ export default function RegistrationForm() {
 
   const handleRegister = async () => {
     try {
-      await axios.post('https://vgt.pythonanywhere.com/register', {
+      await axios.post('https://loginapi-kappa.vercel.app/register', {
         username,
         password
       });
