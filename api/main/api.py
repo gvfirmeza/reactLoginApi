@@ -8,9 +8,11 @@ db = {
     "users": []
 }
 
-@app.route('/', methods=['GET'])
-def getTest():    
-    return jsonfy({"Api Login"})
+@app.route('/users', methods=['GET'])
+def get_users():
+    usernames = [user['username'] for user in db['users']]
+    print("Usuários no banco de dados:", usernames)
+    return jsonify({"Firmamento:": usernames}), 200
 
 @app.route('/register', methods=['POST'])
 def register():
