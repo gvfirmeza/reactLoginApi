@@ -12,7 +12,7 @@ db = {
 def get_users():
     usernames = [user['username'] for user in db['users']]
     print("Usuários no banco de dados:", usernames)
-    return jsonify({"Firmamento:": usernames}), 200
+    return jsonify({"Firmamento": usernames}), 200
 
 @app.route('/register', methods=['POST'])
 def register():

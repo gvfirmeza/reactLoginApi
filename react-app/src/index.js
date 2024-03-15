@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Users from './pages/Users';
 
 const rotas = createBrowserRouter([
   
@@ -20,6 +21,10 @@ const rotas = createBrowserRouter([
   {
     path: "/register",
     element: <Register />
+  },
+  {
+    path: "/users",
+    element: <Users />
   }
 
 ])
